@@ -30,12 +30,15 @@
 # variable: ${{github.VARIABLE_NAME}}
 
 name: Github action offer
+
 on:
   push:
     branches: [main]
-  jobs:
-    build:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Print Hello world
-          run: echo"Hello world"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Print Hello world
+        run: echo "Hello world"
