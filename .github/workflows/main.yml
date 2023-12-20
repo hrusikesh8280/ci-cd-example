@@ -1,1 +1,41 @@
-# Workflow
+
+# # This is a YAML file
+# # In this example, we have defined a title, a description, and an array of tags for a website. Note how each key-value pair is indented with two spaces, and the tags array is denoted by a hyphen followed by a space.
+
+# title: Website Name
+# description: A website for sharing content
+
+
+# # YAML files can use arrays, which are lists of values that are denoted by a hyphen followed by a space. and the tags array is denoted by a hyphen followed by a space.
+# tags: 
+#   - technology
+#   - innovation
+#   - creativity
+
+# name: John Smith
+
+# #Objects (also known as maps or dictionaries) are denoted by key-value pairs that are indented beneath a parent key. For example:
+# person:
+#   name: john smith
+#   age: 25
+#   occupation: web developer
+#   address:
+#     street: 100 Main St.
+#     city: New York City
+#     state: NY
+
+# #Variables: Use variables to store and reference values in your YAML file. Variables are defined using the ${{ }} syntax.
+
+# value: ${{ variables.my_variable }}
+# variable: ${{github.VARIABLE_NAME}}
+
+name: Github action offer
+on:
+  push:
+    branches: [main]
+  jobs:
+    build:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Print Hello world
+          run: echo"Hello world"
