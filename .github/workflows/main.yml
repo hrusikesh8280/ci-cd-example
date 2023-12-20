@@ -33,7 +33,7 @@ name: Github action offer
 
 on:
   push:
-    branches: [main]
+    branches: [master]
 
 jobs:
   build:
