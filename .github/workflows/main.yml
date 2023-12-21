@@ -36,7 +36,7 @@ on:
     branches: [master]
 
 jobs:
-  build:
+  build-node-version:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -46,8 +46,8 @@ jobs:
         run: npm --version
       - name: Print pwd
         run: pwd
-jobs:
-  build:
+
+  build-hello-world:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
